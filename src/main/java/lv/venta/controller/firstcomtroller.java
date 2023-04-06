@@ -78,7 +78,12 @@ public class firstcomtroller {
                 return "error-page";//parādīs error-page.html lapu
                 
         }
-        
+        @GetMapping("/allproducts")
+        public String allProductsFunc(Model model) {
+        	model.addAttribute("myAllProducts", allProducts);
+        	return "all-products-page";
+        	
+        }
         
         
         
