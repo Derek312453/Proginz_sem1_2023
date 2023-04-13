@@ -1,0 +1,34 @@
++<html xmlns:th="http://www.thymeleaf.org">
+	<form action="#"  th:action="@{/insert}"  th:object="${product}"   method="post">
+		<table>
+			<tr>
+				<td>Produkta nosaukums:</td>
+				<td><input type="text" th:field="*{title}"   />  </td>
+			</tr>
+			
+			<tr>
+				<td>Produkta cena:</td>
+				<td><input type="text" th:field="*{price}"   />  </td>
+			</tr>
+			
+			<tr>
+				<td>Produkta apraksts:</td>
+				<td><input type="text" th:field="*{description}"   />  </td>
+			</tr>
+			
+			<tr>
+				<td>Produkta daudzums:</td>
+				<td><input type="text" th:field="*{quantity}"   />  </td>
+			</tr>
+			
+		
+			<tr>
+				<td> <button type="submit"> Saglabāt produktu </button> </td>
+			</tr>	
+		</table>
+		
+		
+	</form>
+	
+	
+</html>
